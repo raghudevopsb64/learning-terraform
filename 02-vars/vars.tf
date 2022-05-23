@@ -48,3 +48,6 @@ output "value-in-map" {
 }
 
 variable "URL" {}
+output "URL" {
+  value = var.URL
+}
