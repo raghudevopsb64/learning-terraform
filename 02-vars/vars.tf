@@ -43,3 +43,6 @@ output "value-in-list" {
   value = var.sample4[3]
 }
 
+output "value-in-map" {
+  value = var.sample5["number"]
+}
