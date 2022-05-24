@@ -23,3 +23,6 @@ resource "aws_security_group" "allow_ec2" {
   }
 }
 
+output "SG_ID" {
+  value = aws_security_group.allow_ec2.id
+}
