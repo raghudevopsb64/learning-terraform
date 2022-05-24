@@ -1,6 +1,6 @@
 resource "aws_security_group" "allow_ec2" {
-  name        = "allow_tls"
-  description = "Allow TLS inbound traffic"
+  name        = "sg-for-${var.COMPONENT}"
+  description = "sg-for-${var.COMPONENT}"
 
   ingress {
     description = "SSH from VPC"
@@ -19,7 +19,7 @@ resource "aws_security_group" "allow_ec2" {
   }
 
   tags = {
-    Name = "allow_tls"
+    Name = "sg-for-${var.COMPONENT}"
   }
 }
 
